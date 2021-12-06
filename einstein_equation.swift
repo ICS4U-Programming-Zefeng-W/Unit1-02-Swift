@@ -11,10 +11,12 @@
 // import Foundation
 import Foundation
 
+// declare constant
+let lightSpeed = 2.998e8
+
 // Ask user for mass of the object and read it
 print("What is the mass of the object?")
 if let objMass = Double(readLine()!) {
-	let lightSpeed = 2.998e8
 	// calculate and display the amount of energy released
 	let energyReleased = objMass * pow(lightSpeed, 2)
 	print("\(energyReleased) Joules of energy is released from an object of mass \(objMass) kg.")
