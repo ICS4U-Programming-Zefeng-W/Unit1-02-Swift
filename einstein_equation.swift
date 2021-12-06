@@ -8,14 +8,14 @@
  of light is 2.998E8 m/s and E=mc^2
 */
 
-// import Foundation module to use pow() function
+// import Foundation
 import Foundation
 
-// Prompts the user to input the mass of the object
+// Ask user for mass of the object and read it
 print("What is the mass of the object?")
-// Reads user's input and does the necessary calculations to find the energy released
 if let objMass = Double(readLine()!) {
 	let lightSpeed = 2.998e8
+	// calculate and display the amount of energy released
 	let energyReleased = objMass * pow(lightSpeed, 2)
 	print("\(energyReleased) Joules of energy is released from an object of mass \(objMass) kg.")
 }
